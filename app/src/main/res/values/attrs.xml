@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 百分比控件自定义属性 -->
+    <declare-styleable name="PercentLayout_Layout">
+        <attr name="layout_widthPercent" format="string" />
+        <attr name="layout_heightPercent" format="string" />
+        <attr name="layout_marginPercent" format="string" />
+        <attr name="layout_marginLeftPercent" format="string" />
+        <attr name="layout_marginTopPercent" format="string" />
+        <attr name="layout_marginRightPercent" format="string" />
+        <attr name="layout_marginBottomPercent" format="string" />
+        <attr name="layout_marginStartPercent" format="string" />
+        <attr name="layout_marginEndPercent" format="string" />
+        <attr name="layout_textSizePercent" format="string" />
+        <attr name="layout_maxWidthPercent" format="string" />
+        <attr name="layout_maxHeightPercent" format="string" />
+        <attr name="layout_minWidthPercent" format="string" />
+        <attr name="layout_minHeightPercent" format="string" />
+        <attr name="layout_paddingPercent" format="string" />
+        <attr name="layout_paddingTopPercent" format="string" />
+        <attr name="layout_paddingBottomPercent" format="string" />
+        <attr name="layout_paddingLeftPercent" format="string" />
+        <attr name="layout_paddingRightPercent" format="string" />
+    </declare-styleable>
+
+    <!-- 圆角图片实现，带边框 -->
+    <declare-styleable name="RoundImageView">
+        <attr name="type" />
+        <attr name="border_color" format="color" />
+        <attr name="border_width" format="dimension" />
+        <attr name="corner_radius" format="dimension" />
+        <attr name="leftTop_corner_radius" format="dimension" />
+        <attr name="leftBottom_corner_radius" format="dimension" />
+        <attr name="rightTop_corner_radius" format="dimension" />
+        <attr name="rightBottom_corner_radius" format="dimension" />
+    </declare-styleable>
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+        <enum name="oval" value="2" />
+    </attr>
+
+    <!-- 轮播滚动条的自定义属性 -->
+    <declare-styleable name="Banner">
+        <attr name="delay_time" format="integer" />
+        <attr name="is_auto_play" format="boolean" />
+        <attr name="title_background" format="color|reference" />
+        <attr name="title_textcolor" format="color" />
+        <attr name="title_textsize" format="dimension" />
+        <attr name="title_height" format="dimension" />
+        <attr name="indicator_width" format="dimension" />
+        <attr name="indicator_height" format="dimension" />
+        <attr name="indicator_margin" format="dimension" />
+        <attr name="indicator_drawable_selected" format="reference" />
+        <attr name="indicator_drawable_unselected" format="reference" />
+        <attr name="image_scale_type" format="enum">
+            <enum name="fit_xy" value="0" />
+            <enum name="center_crop" value="1" />
+        </attr>
+        <!--<attr name="indicator_animator" format="reference" />-->
+        <!--<attr name="indicator_animator_reverse" format="reference" />-->
+    </declare-styleable>
+
+    <!-- 双精度编辑框属性 -->
+    <declare-styleable name="DecimalEditText">
+        <attr name="decimalNumber" format="integer"/>
+    </declare-styleable>
+
+    <!-- Material 主题下拉头，下拉刷新属性 -->
+    <declare-styleable name="MaterialHeader">
+        <attr name="mhPrimaryColor" format="color" />
+        <attr name="mhShadowColor" format="color" />
+        <attr name="mhShadowRadius" format="dimension"/>
+        <attr name="mhShowBezierWave" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="LineChartView">
+        <attr name="lineColor" format="color"></attr><!--折线的颜色-->
+        <attr name="dividerCount" format="integer"></attr><!--纵轴分割数量-->
+        <attr name="xInterval" format="dimension"></attr><!--X轴每个刻度的间距间距-->
+        <attr name="leftInterval" format="dimension"></attr><!-- Y轴距离view长度-->
+        <attr name="bottomInterval" format="dimension"></attr><!--X轴距离view底部的高度-->
+        <attr name="topInterval" format="dimension"></attr><!--X轴距离view顶部长度-->
+        <attr name="yAxisFontSize" format="dimension"></attr><!--Y轴字体的大小-->
+    </declare-styleable>
+    <string-array name="city">
+        <item>北京</item>
+        <item>成都</item>
+        <item>重庆</item>
+        <item>广州</item>
+        <item>杭州</item>
+        <item>南京</item>
+        <item>上海</item>
+        <item>深圳</item>
+        <item>天津</item>
+        <item>武汉</item>
+        <item>西安</item>
+    </string-array>
+
+    <string-array name="provinces">
+        <item>广东</item>
+        <item>北京</item>
+        <item>福建</item>
+        <item>浙江</item>
+        <item>山东</item>
+        <item>江苏</item>
+        <item>河南</item>
+        <item>安徽</item>
+        <item>重庆</item>
+        <item>湖北</item>
+        <item>湖南</item>
+        <item>河北</item>
+        <item>四川</item>
+        <item>天津</item>
+        <item>吉林</item>
+        <item>黑龙江</item>
+        <item>江西</item>
+        <item>辽宁</item>
+        <item>内蒙古</item>
+        <item>宁夏</item>
+        <item>青海</item>
+        <item>山西</item>
+        <item>陕西</item>
+        <item>上海</item>
+        <item>新疆</item>
+        <item>西藏</item>
+        <item>云南</item>
+        <item>甘肃</item>
+        <item>贵州</item>
+        <item>广西</item>
+        <item>海南</item>
+    </string-array>
+
+
+    <attr name="cropImageStyle" format="reference" />
+
+    <declare-styleable name="CropImageView">
+        <attr name="highlightColor" format="reference|color" />
+        <attr name="showThirds" format="boolean" />
+        <attr name="showHandles">
+            <enum name="changing" value="0" />
+            <enum name="always" value="1" />
+            <enum name="never" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="PlaceholderView">
+        <attr name="mode">
+            <enum name="empty" value="0"/>
+            <enum name="loading" value="1"/>
+        </attr>
+        <attr name="empty_icon" format="reference"/>
+        <attr name="empty_message" format="reference|string"/>
+    </declare-styleable>
+
+    <declare-styleable name="DelEditText">
+        <attr name="EditTextColor" format="color" />
+        <attr name="EditHint" format="string" />
+        <attr name="EditHintColor" format="color" />
+        <attr name="Image" format="reference" />
+    </declare-styleable>
+
+    <!-- 流式布局 -->
+    <declare-styleable name="TagFlowLayout">
+        <attr name="auto_select_effect" format="boolean"></attr>
+        <attr name="max_select" format="integer"></attr>
+        <attr name="tag_gravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+    <RelativeLayout
+        android:id="@+id/advDesc_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_title_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/title_bg">
+
+        <TextView
+            android:id="@+id/titleBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/icon_back"
+            android:drawablePadding="2dp"
+            android:gravity="center"
+            android:minWidth="50dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/title_color_six"
+            android:textSize="@dimen/title_text_left" />
+
+        <TextView
+            android:id="@+id/titleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/title_name_normal"
+            android:textColor="@color/title_color_three"
+            android:textSize="@dimen/title_text_center" />
+
+        <LinearLayout
+            android:id="@+id/titleMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/menu_item_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/share_red"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_share_red" />
+
+            <ImageView
+                android:id="@+id/imgMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:src="@drawable/icon_share" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/advDesc_title"
+        android:orientation="vertical" />
+
+    <FrameLayout
+        android:id="@+id/errorView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/advDesc_title"
+        android:background="@color/Black_transparent_black_percent_5"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tip_net_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="哎..呀！数据出错喽"
+            android:textColor="@color/Black_transparent_black_percent_60"
+            android:textSize="16sp" />
+
+    </FrameLayout>
+
+</RelativeLayout>

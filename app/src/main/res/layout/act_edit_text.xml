@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg">
+
+    <include
+        android:id="@+id/edit_title"
+        layout="@layout/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_title_height" />
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_send_submit"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="提交"
+        android:textColor="@color/color_white"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_title"
+        android:layout_marginTop="4dp"
+        android:background="@color/colorwhite"
+        android:hint="用户名称"
+        android:maxLength="8"
+        android:padding="15dp"
+        android:textColor="@color/title_color_three"
+        android:textColorHint="@color/title_color_nine"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/rela_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_name"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/btn_white_base_5">
+
+        <ImageView
+            android:id="@+id/arrow_money_think"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/me_arrow_right" />
+
+        <TextView
+            android:id="@+id/input_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="城市选择"
+            android:padding="10dp"
+            android:textColor="@color/title_color_three"
+            android:textColorHint="@color/title_color_nine"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tagLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/submit"
+        android:layout_below="@+id/rela_city"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_white"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个性标签"
+            android:textColor="@color/title_color_three"
+            android:textSize="18sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5dp">
+
+                <com.jierong.share.tag.TagFlowLayout
+                    android:id="@+id/tagList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:max_select="5" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/edit_top_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/edit_title"
+        android:background="@color/home_bg" />
+
+    <RelativeLayout
+        android:id="@+id/send_need"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_top_line"
+        android:background="@color/colorwhite"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/input_need"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tel"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="需求描述"
+            android:lines="5"
+            android:padding="10dp"
+            android:textColor="@color/Black_transparent_black_percent_80"
+            android:textColorHint="@color/Black_transparent_black_percent_30"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/input_need"
+            android:background="@color/home_bg" />
+    </RelativeLayout>
+
+</RelativeLayout>

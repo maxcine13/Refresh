@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/share_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/main_title"
+        layout="@layout/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_title_height" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="129dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/share_img_top" />
+
+            <ImageView
+                android:layout_width="208dp"
+                android:layout_height="208.5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/share_img_ewm" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="21dp"
+                android:text="我的邀请码"
+                android:textColor="@color/Black_transparent_black_percent_70"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvYqm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="21dp"
+                android:textColor="@color/Black_transparent_black_percent_70"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvTip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="50dp"
+                android:lineSpacingExtra="8dp"
+                android:lineSpacingMultiplier="1.2"
+                android:textColor="@color/Black_transparent_black_percent_70"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="260dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="43dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/share_img_num" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/popuItem1"
+        style="@style/PopuTextStyleLeft"
+        android:background="@drawable/apply_centfication_sele_left_top"
+        android:gravity="center"
+        android:text="预计返利查询" />
+
+    <TextView
+        android:id="@+id/popuItem2"
+        style="@style/PopuTextStyleLeft"
+        android:background="@drawable/apply_centfication_sele_left_bottom"
+        android:gravity="center"
+        android:text="最终返利查询" />
+
+
+</LinearLayout>

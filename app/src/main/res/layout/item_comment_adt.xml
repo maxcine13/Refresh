@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/color_white"
+    android:paddingBottom="10dp"
+    android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignTop="@+id/vaalue_name"
+            android:src="@drawable/icon_header" />
+
+        <TextView
+            android:id="@+id/vaalue_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/img_head"
+            android:maxLength="6"
+            android:text="乌托邦"
+            android:textColor="@color/title_color_nine"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/value_context"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vaalue_name"
+            android:layout_marginTop="2dp"
+            android:maxLines="2"
+            android:layout_toRightOf="@id/img_head"
+            android:text="风向达人赚钱了"
+            android:textColor="@color/title_color_three"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/value_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/value_context"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/img_head"
+            android:text="2017-04-07  09:01"
+            android:textColor="@color/title_color_nine"
+            android:textSize="14sp" />
+
+
+</RelativeLayout>

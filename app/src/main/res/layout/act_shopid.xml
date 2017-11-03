@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/one_title"
+        layout="@layout/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_title_height"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/coloryellow">
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@color/color_gray"
+            android:text="搜索"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edit_search"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@+id/btn_search"
+            android:background="@color/color_white"
+            android:hint="请于下单次日搜索订单编号"
+            android:inputType="number"
+            android:lines="1"
+            android:paddingLeft="35dp"
+            android:textColor="@color/title_color_three"
+            android:textColorHint="#d1d1d1" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/ic_search" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_budget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white">
+
+            <ImageView
+                android:id="@+id/img_money"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_money" />
+
+            <TextView
+                android:id="@+id/txt_budget"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="等待返现"
+                android:textColor="@color/coloryellow"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/home_bg" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_white"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:id="@+id/value_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/title_color_three"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/value_shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/value_goods"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/title_color_six"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/value_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/value_shop"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/title_color_six"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/value_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/value_order"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/title_color_six"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/value_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/value_time"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/color_yellow"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/value_budget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/value_time"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/color_yellow"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rela_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/ba_empty" />
+
+        <TextView
+            android:id="@+id/txt_none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_empty"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="暂无查询记录"
+            android:textColor="#808080"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_none"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="暂无查询记录"
+            android:textColor="@color/coloryellow"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_tips"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="1.请核实订单填写是否正确。\n2.结果只能在下订单的次日才能查询到结果。"
+            android:textColor="#808080"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+</LinearLayout>

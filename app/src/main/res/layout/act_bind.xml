@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_title_height" />
+
+    <EditText
+        android:id="@+id/input_tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="输入手机号码"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:padding="15dp"
+        android:textColor="@color/Black_transparent_black_percent_60"
+        android:textColorHint="@color/Black_transparent_black_percent_30"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/input_tel"
+        android:background="@color/color_qianhui" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/get_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_getkey"
+            android:text="@string/register_get_key"
+            android:textColor="@color/title_color_three"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/input_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/get_key"
+            android:background="@color/transparent"
+            android:hint="输入验证码"
+            android:inputType="number"
+            android:maxLength="6"
+            android:padding="15dp"
+            android:textColor="@color/Black_transparent_black_percent_60"
+            android:textColorHint="@color/Black_transparent_black_percent_30"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/input_key"
+        android:background="@color/color_qianhui" />
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button_register_circle"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/colorwhite"
+        android:textSize="18sp" />
+
+</LinearLayout>

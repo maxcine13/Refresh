@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="@color/color_white">
+
+    <ImageView
+        android:id="@+id/img_head"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+         android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/txt_name"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/icon_header" />
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="乌托邦"
+        android:textColor="@color/title_color_three"
+        android:layout_toRightOf="@id/img_head"
+        android:textSize="18sp" />
+    <RelativeLayout
+        android:id="@+id/rela_one"
+        android:layout_alignTop="@+id/txt_name"
+        android:layout_alignBottom="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_toRightOf="@id/txt_name"
+        >
+
+        <TextView
+            android:id="@+id/txt_authen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="高级认证"
+            android:textSize="12sp"
+            android:textColor="@color/title_color_six" />
+
+        <ImageView
+            android:id="@+id/Img_grade"
+            android:layout_width="10dp"
+            android:layout_height="15dp"
+            android:layout_toRightOf="@id/txt_authen"
+            android:src="@drawable/ic_level_click" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/txt_name"
+        android:layout_below="@id/rela_one"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:text="评分:"
+        android:textColor="@color/title_color_six" />
+
+    <TextView
+        android:id="@+id/value_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rela_one"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/txt_score"
+        android:textSize="12sp"
+        android:text="7.0分"
+        android:textColor="@color/title_color_six" />
+
+    <TextView
+        android:id="@+id/txt_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/txt_name"
+        android:layout_below="@id/txt_score"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/txt_score"
+        android:textSize="12sp"
+        android:text="2017-05-05 10:10"
+        android:textColor="@color/title_color_six" />
+
+
+    <Button
+        android:id="@+id/collection"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:background="#E6E6E6"
+        android:text="取消收藏"
+        android:textSize="14sp"
+        android:textColor="@color/colorwhite" />
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.dreamtobe.kpswitch.widget.KPSwitchRootLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/one_title"
+        layout="@layout/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_title_height"
+       />
+
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+        android:id="@+id/rl_modulename_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/one_title"
+        android:layout_weight="1">
+        <!-- 内容控件 -->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+              />
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+
+    <View style="@style/view_line" />
+
+    <include layout="@layout/layout_send_message_bar" />
+</cn.dreamtobe.kpswitch.widget.KPSwitchRootLinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/tao_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/introduce"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/nointnet"
+            android:gravity="center"
+            android:paddingTop="100dp"
+            android:text="@string/nointnet"
+            android:textColor="@color/title_color_six"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/pb"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:progressDrawable="@drawable/progress" />
+    </FrameLayout>
+
+</LinearLayout>

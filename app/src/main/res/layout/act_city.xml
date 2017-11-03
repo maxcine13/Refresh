@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg">
+
+    <include
+        android:id="@+id/main_title"
+        layout="@layout/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_title_height"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/layout_select"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/main_title"
+        android:background="@color/home_bg"
+        android:orientation="vertical"
+        android:paddingTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorwhite"
+            android:orientation="horizontal">
+
+
+
+            <Spinner
+                android:id="@+id/spinner_sheng"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/color_white"
+                android:paddingLeft="15dp"
+                android:popupBackground="@color/color_white"
+                android:spinnerMode="dialog" />
+            <ImageView
+                android:id="@+id/img_one"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/me_arrow_bottom" />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/home_bg" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorwhite"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spinner_shi"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/colorwhite"
+                android:paddingLeft="15dp"
+                android:popupBackground="@color/color_white"
+                android:spinnerMode="dialog" />
+            <ImageView
+                android:id="@+id/img_two"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/me_arrow_bottom" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/home_bg" />
+
+        <RelativeLayout
+            android:id="@+id/city_rela"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorwhite"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spinner_qu"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/colorwhite"
+                android:paddingLeft="15dp"
+                android:popupBackground="@color/color_white"
+                android:spinnerMode="dialog" />
+            <ImageView
+                android:id="@+id/img_three"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/me_arrow_bottom" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/home_bg" />
+
+        <EditText
+            android:id="@+id/et_detailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_select"
+            android:layout_marginTop="20dp"
+            android:background="@color/Black_transparent_black_percent_5"
+            android:hint="请输入详细地址"
+            android:padding="10dp"
+            android:textColorHint="@color/title_color_nine"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_send_submit"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="确定"
+        android:textColor="@color/color_white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

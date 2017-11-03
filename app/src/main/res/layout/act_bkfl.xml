@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_share_change"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/btn_search"
+            android:layout_width="50dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_share_but"
+            android:gravity="center"
+            android:text="搜商品"
+            android:textColor="@color/color_white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/edit_search"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@+id/btn_search"
+            android:background="@drawable/bg_share_text"
+            android:hint="爆款返利，等你来搜..."
+            android:lines="1"
+            android:paddingLeft="35dp"
+            android:textColor="@color/title_color_three"
+            android:textColorHint="@color/Black_transparent_black_percent_30"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/ic_search" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/relative2"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/topbar"
+        android:background="@drawable/bg_share_change"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/buttonStyle"
+            android:layout_marginLeft="20dp"
+            android:text="全部" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/buttonStyle"
+            android:text="女装" />
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/buttonStyle"
+            android:text="男装" />
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/buttonStyle"
+            android:text="鞋包" />
+
+        <Button
+            android:id="@+id/button6"
+            style="@style/buttonStyle"
+            android:text="食品" />
+
+        <Button
+            android:id="@+id/button7"
+            style="@style/buttonStyle"
+            android:layout_marginRight="20dp"
+            android:text="美妆" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/relative3"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/relative2"
+        android:background="@drawable/bg_share_change"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button8"
+            style="@style/buttonStyle"
+            android:layout_marginLeft="20dp"
+            android:text="家电" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="65dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/bg_share_but3"
+            android:text="珠宝配饰"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="65dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/bg_share_but3"
+            android:text="运动户外"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button11"
+            style="@style/buttonStyle"
+            android:text="母婴" />
+
+        <Button
+            android:id="@+id/button12"
+            style="@style/buttonStyle"
+            android:layout_marginRight="20dp"
+            android:text="内衣" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/relative4"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/relative3"
+        android:background="@drawable/bg_share_change"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button13"
+            style="@style/buttonStyle"
+            android:layout_marginLeft="20dp"
+            android:text="数码" />
+
+        <Button
+            android:id="@+id/button14"
+            style="@style/buttonStyle"
+            android:text="家装" />
+
+
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="65dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/bg_share_but3"
+            android:text="居家用品"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button16"
+            style="@style/buttonStyle"
+            android:text="汽车" />
+
+        <Button
+            android:id="@+id/button17"
+            android:layout_width="65dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_share_but3"
+            android:text="生活服务"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/relative5"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/relative4"
+        android:background="@drawable/bg_share_change"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button18"
+            android:layout_width="65dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bg_share_but3"
+            android:text="图书音像"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button19"
+            android:layout_width="65dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/bg_share_but3"
+            android:text="游戏话费"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button20"
+            android:layout_width="65dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_share_but3"
+            android:text="其他"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative5"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <FrameLayout
+        android:id="@+id/bt_top"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:src="@drawable/selector_pzjd_top" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/emptyView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative5"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/null_data_img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="暂无数据"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/errorView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative5"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/net_error_img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="网络出错了！"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+    </LinearLayout>
+</RelativeLayout>

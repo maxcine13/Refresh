@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/vlv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/view_nonet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/Black_transparent_black_percent_10"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/nonet_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="5dp"
+            android:text="网络异常，请稍后重试"
+            android:textColor="@color/Black_transparent_black_percent_80"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

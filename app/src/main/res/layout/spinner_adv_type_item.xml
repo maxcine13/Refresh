@@ -1,0 +1,11 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_send_line"
+    android:ellipsize="end"
+    android:gravity="center"
+    android:lines="1"
+    android:padding="10dp"
+    android:textColor="@color/Black_transparent_black_percent_75"
+    android:textSize="15sp" />

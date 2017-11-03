@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg">
+
+    <include
+        android:id="@+id/main_title"
+        layout="@layout/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_title_height"
+        android:layout_alignParentTop="true" />
+
+
+    <EditText
+        android:id="@+id/input_old"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_title"
+        android:layout_marginTop="4dp"
+        android:background="@color/colorwhite"
+        android:hint="请输入旧密码"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColor="@color/Black_transparent_black_percent_60"
+        android:textColorHint="@color/Black_transparent_black_percent_30"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/input_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_old"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorwhite"
+        android:maxLength="20"
+        android:hint="请输入新密码"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColor="@color/Black_transparent_black_percent_60"
+        android:textColorHint="@color/Black_transparent_black_percent_30"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/input_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_new"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorwhite"
+        android:maxLength="20"
+        android:hint="请确认新密码"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColor="@color/Black_transparent_black_percent_60"
+        android:textColorHint="@color/Black_transparent_black_percent_30"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/input_two"
+        android:background="@color/home_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="@string/sign"
+            android:textColor="@color/title_color_nine" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/sign1"
+            android:textColor="@color/title_color_nine" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/sign2"
+            android:textColor="@color/title_color_nine" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/sign3"
+            android:textColor="@color/title_color_nine" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/btn_send_submit"
+        android:gravity="center"
+        android:text="立即提交"
+        android:textColor="@color/color_white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

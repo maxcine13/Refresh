@@ -1,0 +1,136 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">分享赚客</string>
+
+    <!-- 顶端标题栏 -->
+    <string name="title_name_normal">页&#160;面&#160;标&#160;题</string>
+    <string name="title_name_home">首&#160;页</string>
+    <string name="title_name_tao">分&#160;享&#160;赚&#160;钱</string>
+    <string name="title_name_send">分&#160;享&#160;达&#160;人</string>
+    <string name="title_name_master">分&#160;享&#160;达&#160;人</string>
+    <string name="title_name_collection">我&#160;的&#160;收&#160;藏</string>
+    <string name="title_name_me">个&#160;人&#160;中&#160;心</string>
+    <string name="title_name_bind">绑&#160;定&#160;手&#160;机</string>
+    <string name="title_make_pw">设&#160;置&#160;密&#160;码</string>
+    <string name="title_name_change_pw">修&#160;改&#160;密&#160;码</string>
+    <string name="title_name_adv_desc">广&#160;告&#160;详&#160;情</string>
+    <string name="title_name_city">城&#160;市&#160;选&#160;择</string>
+    <string name="title_name_authen">达&#160;人&#160;认&#160;证</string>
+    <string name="title_name_bz">白&#160;赚</string>
+    <string name="title_name_shop">购&#160;物</string>
+    <string name="title_name_shop_fan">返&#160;利&#160;宝</string>
+    <string name="title_name_money_have">我&#160;的&#160;余&#160;额</string>
+    <string name="title_name_money_out">提&#160;现</string>
+    <string name="title_name_bind_card">绑定支付宝</string>
+    <string name="me_name">姓&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;名</string>
+    <string name="card_bind_name">姓&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;名</string>
+
+    <!-- 底端按钮栏 -->
+    <string name="bottom_name_one">返利</string>
+    <string name="bottom_name_two">赚钱</string>
+    <string name="bottom_name_three">达人</string>
+    <string name="bottom_name_four">我的</string>
+
+    <string name="bottom_name_send">广告投放</string>
+    <!-- 注册界面字符串 -->
+    <string name="login_register"><u>注册</u></string>
+    <string name="register_login"><u>登录</u></string>
+    <string name="register_agreement"><u>《分享赚客用户协议》</u></string>
+    <string name="register_agreement_txt">《分享赚客用户协议》</string>
+    <string name="register_phoneNumber">请输入电话号码</string>
+    <string name="register_verificationCode">请输入验证码</string>
+    <string name="register_city">所在城市</string>
+    <string name="register_clickGet">点击获取</string>
+    <string name="register_password">请输入密码</string>
+    <string name="register_account">已有分享赚客账号，去</string>
+    <string name="register_fastLogin">其他社交账号快速登录</string>
+    <string name="register_register">注册即代表同意</string>
+
+    <string name="register_get_key">获取验证码</string>
+    <string name="network_error">网络异常，请检查网络</string>
+
+    <string name="me_money_free">白&#160;&#160;赚</string>
+    <string name="me_money_shop">购&#160;&#160;物</string>
+    <string name="me_money_fan">返&#160;利&#160;宝</string>
+    <string name="me_money_come">签到积分</string>
+    <string name="me_money_give">推荐积分</string>
+    <string name="me_order">我的订单</string>
+    <string name="me_recommend">推荐奖励</string>
+    <string name="me_message">我的消息</string>
+    <string name="me_master">达人认证</string>
+    <string name="me_send">广告投放</string>
+    <string name="me_collection">我的收藏</string>
+    <string name="me_yqm">邀&#160;&#160;请&#160;&#160;码</string>
+    <string name="me_money_share">分享积分</string>
+    <string name="me_money_integral">返利积分</string>
+    <string name="me_money_all">账户积分</string>
+    <string name="me_money_think">收益分析</string>
+    <string name="me_money_shopid">申请返利</string>
+    <string name="me_money_get">立即提现</string>
+    <string name="me_money_have">余额</string>
+    <string name="me_pw_change">修改密码</string>
+    <string name="me_update_check">检查更新</string>
+    <string name="me_help_center">帮助中心</string>
+    <string name="master_info">达人详情</string>
+    <string name="master_comment">达人评论</string>
+    <string name="auth_tips">认证达人细则</string>
+
+    <string name="me_logout">退出账号</string>
+    <string name="adv_list_tip">温馨提示：内容分享有收益，成交返佣金，详细规则可查看《分享赚客收益规则》</string>
+    <string name="adv_share">一键分享</string>
+    <string name="send_name">姓\t\t\t\t名</string>
+    <string name="send_phone">电\t\t\t\t话</string>
+    <string name="two_one">帮&#160;助&#160;文&#160;档</string>
+    <string name="two_two">使&#160;用&#160;说&#160;明</string>
+    <string name="two_three">工&#160;作&#160;之&#160;余</string>
+    <!-- 节操视频播放器 -->
+    <string name="tips_not_wifi">您当前正在使用移动网络，继续播放将消耗流量</string>
+    <string name="tips_not_wifi_confirm">继续播放</string>
+    <string name="tips_not_wifi_cancel">停止播放</string>
+    <string name="no_url">播放地址无效</string>
+    <!-- 图片选择器 -->
+    <string name="tip_take_photo">拍摄照片</string>
+    <string name="selector_caption">选择图片</string>
+    <string name="selector_action_done">完成(%1$d/%2$d)</string>
+    <string name="selector_preview">预览</string>
+    <string name="selector_folder_all">所有图片</string>
+    <string name="selector_permission_error">权限错误，无法正常工作！</string>
+    <string name="selector_reach_max_image_hint">您已经选择%d张图片了!</string>
+    <string name="msg_no_camera">无法启动相机!</string>
+    <string name="camera_temp_file_error">图片错误</string>
+    <!-- 权限审核提示内容 -->
+    <string name="permission_tip_phone">为了应用的正常运行，需要您开启 “ 读取手机状态 ” 的权限</string>
+    <string name="permission_tip_sd">为了应用的正常运行，需要您开启 “ 获取手机存储 ” 的权限</string>
+    <string name="permission_tip_location">为了应用的正常运行，需要您开启 “ 获取此设备的位置信息 ” 的权限</string>
+    <string name="permission_tip_accounts">为了应用的正常运行，需要您开启 “ 获取读取联系人 ” 的权限</string>
+    <string name="permission_tip_camera">为了应用的正常运行，需要您开启 “ 获取拍照 ” 的权限</string>
+    <!-- 其他界面字符串 -->
+    <string name="me_money_trend">收益趋势</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="incomerule">收益规则</string>
+    <string name="sign">温馨提示</string>
+    <string name="sign1">1、密码建议使用6-20位字母加数字组合</string>
+    <string name="sign2">2、修改密码立即生效</string>
+    <string name="sign3">3、密码请勿多次修改</string>
+    <string name="while_line">白条额度</string>
+    <string name="me_activation">激活白条</string>
+    <string name="details">详情说明</string>
+    <string name="master_tips">我已阅读并同意</string>
+    <string name="authen_change">修改</string>
+
+    <string name="crop__saving" translatable="false">Saving picture…</string>
+    <string name="crop__wait" translatable="false">Please wait…</string>
+    <string name="crop__pick_error" translatable="false">No image sources available</string>
+
+    <string name="crop__done" translatable="false">确认</string>
+    <string name="crop__cancel" translatable="false" tools:ignore="ButtonCase">取消</string>
+    <string name="empty_message">这家伙太懒了，这里什么都没有</string>
+    <string name="loading">正在加载</string>
+
+    <string name="nointnet">网络没有了，小主人链接网络后再来找我吧。</string>
+
+    <string name="goodsnumber">商品编号</string>
+    <string name="applytime">申请时间</string>
+    <string name="operation">操作</string>
+    <string name="WXShare">分享到微信</string>
+    <string name="Customer">客服服务</string>
+</resources>

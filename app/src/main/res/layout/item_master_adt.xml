@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rela_all"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@color/colorwhite">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/img_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_master_one" />
+
+        <TextView
+            android:id="@+id/value_grade"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingRight="2dp"
+            android:paddingTop="2dp"
+            android:textColor="@color/color_white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rela_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_head"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/icon_header" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/img_head"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="乌托邦"
+            android:textColor="@color/title_color_six"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_authentication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_name"
+            android:text="认证等级:"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/title_color_six"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txt_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_name"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/txt_authentication"
+            android:text="高级认证"
+            android:textColor="@color/title_color_six"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/Img_grade"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_below="@id/txt_name"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/txt_grade"
+            android:src="@drawable/ic_level_normal"
+              />
+
+        <TextView
+            android:id="@+id/txt_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_authentication"
+            android:text="评分:"
+            android:textColor="@color/title_color_six"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/value_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_authentication"
+            android:layout_toRightOf="@id/txt_score"
+            android:text="7.9分:"
+            android:textColor="@color/title_color_six"
+            android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rela_one"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_line"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/txt_number"
+                style="@style/text_master"
+                android:text="分享次数:" />
+
+            <TextView
+                android:id="@+id/value_number"
+                style="@style/text_master_yellow"
+                android:layout_toRightOf="@id/txt_number"
+                  />
+
+            <TextView
+                android:id="@+id/txt_click"
+                style="@style/text_master"
+                android:layout_below="@+id/txt_number"
+                android:text="分享点击量:" />
+
+            <TextView
+                android:id="@+id/value_click"
+                style="@style/text_master_yellow"
+                android:layout_below="@+id/txt_number"
+                android:layout_toRightOf="@id/txt_click"
+                />
+
+            <TextView
+                android:id="@+id/txt_deal"
+                style="@style/text_master"
+                android:layout_below="@+id/txt_click"
+                android:text="分享成交量:" />
+
+            <TextView
+                android:id="@+id/value_deal"
+                style="@style/text_master_yellow"
+                android:layout_below="@+id/txt_click"
+                android:layout_toRightOf="@id/txt_deal" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/txt_profit"
+                style="@style/text_master"
+                android:text="分享收益:" />
+
+            <TextView
+                android:id="@+id/value_profit"
+                style="@style/text_master_yellow"
+                android:layout_toRightOf="@id/txt_profit" />
+
+            <TextView
+                android:id="@+id/txt_deal_profit"
+                style="@style/text_master"
+                android:layout_below="@+id/txt_profit"
+                android:text="分享成交收益:" />
+
+            <TextView
+                android:id="@+id/value_deal_profit"
+                style="@style/text_master_yellow"
+                android:layout_below="@+id/txt_profit"
+                android:layout_toRightOf="@id/txt_deal_profit" />
+
+            <TextView
+                android:id="@+id/txt_total_income"
+                style="@style/text_master"
+                android:layout_below="@+id/txt_deal_profit"
+                android:text="达人总收益:" />
+
+            <TextView
+                android:id="@+id/value_total_income"
+                style="@style/text_master_yellow"
+                android:layout_below="@+id/txt_deal_profit"
+                android:layout_toRightOf="@id/txt_total_income" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

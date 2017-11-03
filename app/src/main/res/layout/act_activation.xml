@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/advDesc_title"
+        layout="@layout/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_title_height"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/text_authen"
+            android:text="@string/me_name"
+            android:textColor="@color/coloryellow" />
+
+        <EditText
+            android:id="@+id/value_name"
+            style="@style/edit_activation"
+            android:layout_width="match_parent"
+            android:hint="请输入您的名字"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:textColor="@color/title_color_six" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/text_authen"
+            android:text="性\t\t别" />
+
+        <EditText
+            android:id="@+id/value_sex"
+            style="@style/edit_authen"
+            android:layout_width="match_parent"
+            android:hint="请输入您的性别"
+            android:lines="1"
+            android:textColor="@color/title_color_six" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/text_authen"
+            android:text="年&#160;&#160;&#160;龄"
+            android:textColor="@color/coloryellow" />
+
+        <EditText
+            android:id="@+id/value_age"
+            style="@style/edit_authen"
+            android:layout_width="match_parent"
+            android:hint="请输入您的年龄"
+            android:inputType="number"
+            android:lines="1"
+            android:textColor="@color/title_color_six" />
+
+    </LinearLayout>
+
+    <View style="@style/view_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_authen"
+            android:text="身份证号"
+            android:textColor="@color/coloryellow" />
+
+        <EditText
+            android:id="@+id/value_ID"
+            style="@style/edit_activation"
+            android:layout_width="match_parent"
+            android:digits="0123456789qwertyuioplkjhgfdsazxcvbnm"
+            android:hint="请输入您的身份证号码"
+            android:maxLength="18"
+            android:maxLines="1"
+            android:textColor="@color/title_color_six" />
+
+    </LinearLayout>
+
+    <View style="@style/view_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_authen"
+            android:text="银行卡号"
+            android:textColor="@color/coloryellow" />
+
+        <EditText
+            android:id="@+id/value_bankcard"
+            style="@style/edit_activation"
+            android:layout_width="match_parent"
+            android:hint="请输入您的银行卡号"
+            android:inputType="number"
+            android:maxLength="19"
+            android:maxLines="1"
+            android:textColor="@color/title_color_six" />
+
+    </LinearLayout>
+
+    <View style="@style/view_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_authen"
+            android:text="手机号码"
+            android:textColor="@color/coloryellow" />
+
+        <EditText
+            android:id="@+id/activation_phone"
+            style="@style/edit_activation"
+            android:layout_width="match_parent"
+            android:hint="请输入银行卡预留手机号"
+            android:inputType="number"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:textColor="@color/title_color_six" />
+
+    </LinearLayout>
+
+    <View style="@style/view_line" />
+
+    <RelativeLayout
+        android:id="@+id/auth_rela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:paddingLeft="10dp">
+
+        <CheckBox
+            android:id="@+id/cb_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/checkbox_style"
+            android:checked="true"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/master_tips"
+            android:textColor="@color/title_color_nine"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/auth_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/cb_tips"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="《分享赚客白条条约》"
+            android:textColor="@color/zan_click"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rela_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_send_submit"
+            android:text="立即激活"
+            android:textColor="@color/colorwhite"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

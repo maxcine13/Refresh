@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/advDesc_title"
+        layout="@layout/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_title_height"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_authen"
+            android:text="姓\t\t名"
+            android:textColor="@color/coloryellowqian" />
+
+        <EditText
+            android:id="@+id/value_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:hint="请输入姓名"
+            android:paddingRight="20dp"
+            android:textColor="@color/title_color_six"
+            android:textColorHint="@color/title_color_nine"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <View style="@style/view_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_authen"
+            android:text="性\t\t别"
+            android:textColor="@color/coloryellowqian" />
+
+        <EditText
+            android:id="@+id/value_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:hint="请输入性别"
+            android:paddingRight="20dp"
+            android:textColor="@color/title_color_six"
+            android:textColorHint="@color/title_color_nine"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <View style="@style/view_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_authen"
+            android:text="年\t\t龄"
+            android:textColor="@color/coloryellowqian" />
+
+        <EditText
+            android:id="@+id/value_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:hint="请输入年龄"
+            android:paddingRight="20dp"
+            android:textColor="@color/title_color_six"
+            android:textColorHint="@color/title_color_nine"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <View style="@style/view_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_authen"
+            android:text="身份证"
+            android:textColor="@color/coloryellowqian" />
+
+        <EditText
+            android:id="@+id/value_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:hint="123456789"
+            android:paddingRight="20dp"
+            android:textColor="@color/title_color_six"
+            android:textColorHint="@color/title_color_nine"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <View style="@style/view_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_authen"
+            android:text="银行卡"
+            android:textColor="@color/coloryellowqian" />
+
+        <EditText
+            android:id="@+id/value_bankcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:hint="123456789"
+            android:paddingRight="20dp"
+            android:textColor="@color/title_color_six"
+            android:textColorHint="@color/title_color_nine"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <View style="@style/view_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb_tips"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_send_submit"
+            android:text="确定"
+            android:textColor="@color/colorwhite"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

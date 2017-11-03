@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+
+	<QQ
+		Id="1"
+		SortId="1"
+		AppId="1106080603"
+		AppKey="SSgSeKOEkf81hsgN"
+		BypassApproval="true"
+		ShareByAppClient="true"
+		Enable="true" />
+	<QZone
+		Id="2"
+		SortId="2"
+		AppId="1106080603"
+		AppKey="SSgSeKOEkf81hsgN"
+		BypassApproval="true"
+		Enable="true" />
+	<Wechat
+		Id="3"
+		SortId="3"
+		AppId="wxf683ffdd2e2d206c"
+		AppSecret="991ba69eb6d71ba2efc9c13fd139c14f"
+		userName="gh_afb25ac019c9"
+		path="/page/API/pages/share/share"
+		BypassApproval="false"
+		Enable="true" />
+	<WechatMoments
+		Id="4"
+		SortId="4"
+		AppId="wxf683ffdd2e2d206c"
+		AppSecret="991ba69eb6d71ba2efc9c13fd139c14f"
+		BypassApproval="false"
+		Enable="true" />
+    <SinaWeibo
+        Id="5"
+        SortId="5"
+        AppKey="3778070942"
+        AppSecret="9013a7f5e7b3adb300fc981c1edd2a9d"
+        RedirectUrl="https://api.weibo.com/oauth2/default.html"
+        ShareByAppClient="true"
+        Enable="true" />
+	<Alipay
+		Id="6"
+		SortId="6"
+		AppId="2017051207220422"
+		Enable="true"/>
+	<AlipayMoments
+		Id="7"
+		SortId="7"
+		AppId="2017051207220422"
+		Enable="true"/>
+	<Dingding
+		Id="8"
+		SortId="8"
+		AppId="dingoa33qy6uh16ayufjmd"
+		BypassApproval="false"
+		Enable="true"/>
+	<Facebook
+		Id="9"
+		SortId="9"
+		ConsumerKey="1412473428822331"
+		ConsumerSecret="a42f4f3f867dc947b9ed6020c2e93558"
+		RedirectUrl="https://mob.com"
+		ShareByAppClient="true"
+		Enable="true" />
+	<Youtube
+		Id="10"
+		SortId="10"
+		ClientID="370141748022-bicrnsjfiije93bvdt63dh3728m4shas.apps.googleusercontent.com"
+		AppSecret="AIzaSyAO06g-0TDpHcsXXO918a7QE3Zdct2bB5E"
+		RedirectUrl="http://localhost"
+		ShareByAppClient="true"
+		Enable="true" />
+
+</DevInfor>
